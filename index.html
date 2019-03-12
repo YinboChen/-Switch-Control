@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>
+			Calculator Demo
+		</title>
+		<link rel="stylesheet" href="calculator.css" type="text/css">
+	</head>
+	<body>
+		<div id="calculator">
+			<h1>calc U l8r</h1>
+			<div class="calculator_row">
+				<input id="number_input">
+			</div>
+			<div class="calculator_row">
+				<button id="button7" class="calcButton row1 col1">7</button>
+				<button id="button8" class="calcButton row1 col2">8</button>
+				<button id="button9" class="calcButton row1 col3">9</button>
+				<button id="buttonDivide" class="calcButton row1 col4 function">/</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button4" class="calcButton row2 col1">4</button>
+				<button id="button5" class="calcButton row2 col2">5</button>
+				<button id="button6" class="calcButton row2 col3">6</button>
+				<button id="buttonMultiply" class="calcButton row2 col4 function">*</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button1" class="calcButton row3 col1">1</button>
+				<button id="button2" class="calcButton row3 col2">2</button>
+				<button id="button3" class="calcButton row3 col3">3</button>
+				<button id="buttonAdd" class="calcButton row3 col4 function">+</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button0" class="calcButton row4 col1">0</button>
+				<button id="buttonClear" class="calcButton row4 col2 meta">C</button>
+				<button id="buttonEquals" class="calcButton row4 col3 meta">=</button>
+				<button id="buttonSubtract" class="calcButton row4 col4 function">-</button>
+			</div>
+		</div>
+		<div>
+			<h2>Selecting the number of buttons to control the interface </h2>
+
+			<div>
+				<button  id="1keybutton" class="selectnumkey">1key</button>
+				<button  id="2keybutton" class="selectnumkey">2key</button>
+				<button  id="3keybutton" class="selectnumkey">3key</button>
+				<button  id="5keybutton" class="selectnumkey">5key</button>
+			</div>
+			<div>
+				<h3>Set the loop rate( defalut 1000)</h2>
+				<input id="looprate" placeholder="1000 = 1 sec">
+			</div>
+			</div>
+		</div>
+
+		<div id="comments">
+			<h2>About this app</h2>			
+			<ol>
+			<li><h3>Instructions for using the app</h3>
+			<p>This app provides four versions which can be controlled with one key, two keys, three keys and five keys.</p>
+			<h3>In the one key version</h3>
+			<ul >
+				<li>Each button on calculator will be selected automatically. </li>
+				<li>You can using "q" key to input the selected item for calculation.</li>
+				<li>You can input time as a parameter to change cycle rate. </li>
+
+			</ul>
+
+			<h3>In the two keys version</h3>
+			<ul >
+				<li>You can using "q" key to input the selected item for calculation.</li>
+				<li>Using "d" key to select the next item.</li>
+
+			</ul>
+
+			<h3>In the three keys version</h3>
+			<ul >
+				<li>Using "q" key to input the selected item for calculation.</li>
+				<li>Using "d" key to select the next item.</li>
+				<li>Using "a" key to select the previous item.</li>
+			</ul>
+
+			<h3>In the five keys version</h3>
+			<ul >
+				<li>Using "q" key to input the selected item for calculation.</li>
+				<li>Using "d" key to select the next item.</li>
+				<li>Using "a" key to select the previous item.</li>
+				<li>Using "w" key to select the above item.</li>
+				<li>Using "s" key to select the below item.</li>
+			</ul></li>
+		
+			<li><h3>Mini-tests</h3>
+			<p>Experiment Setting: </p>
+			<p>Calculating the formula "(945+76-13)*20/8= " which uses all of the keys on the calculator.</p>
+			<p>Using each version(except the one key version) with hand and stylus which be holded by teeth(using mouth pen for short). </p>
+			<p>Using one key scanning version with different scan speeds(300ms, 500ms, 1000ms and 1500ms). </p>
+			<table border="1">
+				<caption>Collected Data</caption>
+				<tr>
+					<th>Versions</th>
+					<th>1 trial(s)</th>
+					<th>2 trial(s)</th>
+					<th>3 trial(s)</th>
+					<th>4 trial(s)</th>
+					<th>5 trial(s)</th>
+					<th>Mean(s)</th>
+					<th>Condition</th>
+				</tr>
+				<tr>
+						<th rowspan="4">one key</th>
+						<td>x</td>
+						<td>x</td>
+						<td>x</td>
+						<td>x</td>
+						<td>x</td>
+						<td>x</td>
+						<td>300ms</td>
+				</tr>
+				<tr>
+						
+						<td>74.50</td>
+						<td>67.55</td>
+						<td>54.35</td>
+						<td>54.23</td>
+						<td>54.30</td>
+						<td>60.99</td>
+						<td>500ms</td>
+				</tr>
+				<tr>
+						
+						<td>118.85</td>
+						<td>104.23</td>
+						<td>102.30</td>
+						<td>102.21</td>
+						<td>103.50</td>
+						<td>106.22</td>
+						<td>1000ms</td>
+				</tr>
+				<tr>
+						
+						<td>148.87</td>
+						<td>150.20</td>
+						<td>148.53</td>
+						<td>148.55</td>
+						<td>149.37</td>
+						<td>149.10</td>
+						<td>1500ms</td>
+				</tr>
+
+				<tr>
+						<th rowspan="2">two keys</th>
+						<td>37.56</td>
+						<td>37.86</td>
+						<td>31.73</td>
+						<td>28.00</td>
+						<td>32.47</td>
+						<td>33.52</td>
+						<td>hand</td>
+				</tr>
+				<tr>
+						
+						<td>139.27</td>
+						<td>140.51</td>
+						<td>138.72</td>
+						<td>141.15</td>
+						<td>139.37</td>
+						<td>139.80</td>
+						<td>mouth pen</td>
+				</tr>
+
+				<tr>
+						<th rowspan="2">three keys</th>
+						<td>48.00</td>
+						<td>29.55</td>
+						<td>37.41</td>
+						<td>34.55</td>
+						<td>30.70</td>
+						<td>36.04</td>
+						<td>hand</td>
+				</tr>
+				<tr>
+						
+						<td>87.70</td>
+						<td>63.92</td>
+						<td>65.91</td>
+						<td>64.73</td>
+						<td>64.00</td>
+						<td>69.25</td>
+						<td>mouth pen</td>
+				</tr>
+
+				<tr>
+						<th rowspan="2">five keys</th>
+						<td>28.28</td>
+						<td>26.03</td>
+						<td>20.53</td>
+						<td>20.51</td>
+						<td>20.45</td>
+						<td>23.16</td>
+						<td>hand</td>
+				</tr>
+				<tr>
+						
+						<td>69.95</td>
+						<td>59.55</td>
+						<td>54.51</td>
+						<td>67.70</td>
+						<td>56.17</td>
+						<td>61.58</td>
+						<td>mouth pen</td>
+				</tr>
+				
+			</table>
+			</li>
+
+			<li><h3>Data analysising</h3>
+			<p>Comparing the one key, two keys, three keys and five keys version, it shows that operation by hand spent the less time </p>
+			<p>than operation by others such as using mouth pen in these experiments. It took the least amount of time only 23.16 s to </p>
+			<p>completed the calculation when using five keys version by hand. When using the two keys version and three keys versions </p>
+			<p>by hand, the operating time is similar, but comparing the data with mouth pen, it shows that the two keys version took the</p>
+			<p>longest time, significantly longer than the three keys version which using the mouth pen. So according to the data, </p>
+			<p>it should avoid operating two keys version when using different parts of body as input medium. </p>
+			<p>In addition, the operating time of three keys version and five keys version by the mouth pen were similar. It indicted </p>
+			<p>that number of keys is not the main factor when using unfamiliar input medium such as the mouth pen in this case.</p>
+			<p>Moreover, it’s very interesting to operating the one key version with different speeds. It can’t operate when speed was </p>
+			<p>300ms due to excessive error rate, the error rate was almost 100%. When speed was reduced to 500ms, there was still one- fifth</p>
+			<p>of the turnover rate. Through the data shows that operating time is proportional to scanning speed. It means that operating </p>
+			<p>the one key version needs to trade-off the error rate and scanning speed. Unfortunately, the more accuracy data was not recorded </p>
+			<p>in these experiments.</p>
+		</li>
+
+		</ol>
+
+
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<script src="calculator.js" type="text/javascript"></script>
+	</body>
+</html>
